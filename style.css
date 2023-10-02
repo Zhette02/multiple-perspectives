@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: small;
+    color: rgb(255, 255, 0);
+}
+
+#canvas1 {
+    background-color: rgba(240 240, 255, 5);
+}
+
+#containerMain{
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 100vh;
+}
+
+#container1{
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 5;
+    justify-content: center;
+}
+
+#container2{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 20vw;
+    min-width: max-content;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: outset;
+    border-width: 3px;
+    text-wrap: wrap;
+    background-color: white;
+}
+
+.element0{
+    background-color: blue;
+    flex-grow: 1;
+    color: white;
+}
+
+.element1{
+    background-color: white;
+    color: black;
+    justify-content: start;
+    border-style: outset; 
+    border-width: 3px;
+    flex-grow: 2;
+    padding: 2em;
+}
+
+.element2{
+    flex-grow: 5;
+}
+
+#canvas1{
+    border-style: outset;
+    border-width: 3px;
+}
+
+#indexlist{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 10;
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+}
+
+ul li:hover{
+    background: rgba(240 240, 255, 5);
+}
+
+ul li .content {
+    position: absolute;
+    background: rgba(240 240, 255, 5);
+    padding: 20px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+ul li:hover .content {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-105%) translateY(0);
+}
+
+
+
+
+
+/* /////////////////////SKETCH1/////////////////// */
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    height: 15rem;
+  }
+
+
+#container3{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#container4 {
+    display: flex;
+    flex-grow: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#sketch1list {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 20;
+    margin: 0;
+    padding: 0;
+
+}
+
+#sketch1list li:last-child {
+    flex-grow: 10;
+}
+
+#sidebar {
+    padding: 4px;
+}
+
+
+/* /////////////////////////////SKETCH2//////////////////////////// */
+
+.big {
+    width: 95vw;
+    height: auto;
+}
+
+#long {
+    height: 100%;
+    width: 20rem;
+}
+
+/* ///////////////////////////sketch4////////// */
+
+.sketch4 {
+    padding: 3px;
+    margin: 3px;
+}
+
+#container5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#large {
+    height: 100vh;
+}
