@@ -19,7 +19,7 @@ h1 {
 
 #container1{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     flex-grow: 5;
     justify-content: center;
 }
@@ -106,7 +106,8 @@ ul li:hover .content {
     visibility: visible;
     opacity: 1;
     position: absolute;
-    transform: translateX(-105%) translateY(0);
+    transform: translateX(-70%) translateY(0);
+    width: 50vw;
 }
 
 
@@ -120,7 +121,12 @@ img {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+  }
+
+  .gallery
+  {
     height: 15rem;
+    
   }
 
 
