@@ -119,13 +119,15 @@ ul li:hover .content {
 img {
     max-height: 100%;
     min-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     vertical-align: bottom;
   }
 
   .gallery
   {
     height: 15rem;
+    object-fit: cover;
+
     
   }
 
